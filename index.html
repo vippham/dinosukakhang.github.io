@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Normie</h1>
+            <p id="typed-text"></p>
+            <div class="profile-image">
+                <img src="vetoi.png" alt="Normie">
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#coding-journey">Coding Journey</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="about" class="content">
+                <h2>About Me</h2>
+                <p>I enjoy writing code and solving problems. Every time I complete a project, I feel a great sense of satisfaction. It's exciting to create something from scratch. I also love learning from others and growing my skills together with them.</p>
+            </section>
+
+            <section id="skills" class="content">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML5 </li>
+                    <li>CSS3(only know a little)</li>
+                    <li>JavaScript(still not good as all)</li>
+                    <li>Python</li>
+                    <li>UI/UX Design(Figma+Midjounery)</li>
+                    <li>SQL Injection+Making Dork To Attack</li>
+                </ul>
+            </section>
+
+            <section id="projects" class="content">
+                <h2>Projects</h2>
+                <p>Here are some of my recent projects:</p>
+                <ul>
+                    <li>Basic E-commerce Website</li>
+                    <li>Book Recommendation System</li>
+                    <li>Website Introduces Myself</li>
+                    <li>Weather App Using Open-Meteo Api</li>
+                </ul>
+            </section>
+
+            <section id="coding-journey" class="content">
+                <h2>My Coding Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>2020</h3>
+                            <p>Started learning SQl Injection</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>2021</h3>
+                            <p>Learned HTML+CSS and built my first basic interactive website</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>2022</h3>
+                            <p>Explored Python and started applications</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>2023</h3>
+                            <p>This year I no longer focus on programming because I have to take the transfer exam from middle school to high school and it wansn't until the end of the year that I practiced again</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>2024</h3>
+                            <p>Learn how to create and manage databases and use the PHP language</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="content">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out to me for collaborations or inquiries:</p>
+                <p>Email: vipkhang1313@gmail.com</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer" title="Facebook">📘</a>
+                    <a href="https://www.twitter.com/your-profile" target="_blank" rel="noopener noreferrer" title="Twitter">🐦</a>
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" title="LinkedIn">💼</a>
+                    <a href="https://www.github.com/your-profile" target="_blank" rel="noopener noreferrer" title="GitHub">🐱</a>
+                    <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer" title="Instagram">📷</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <button id="back-to-top" title="Back to Top">↑</button>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="java.js"></script>
+    <div id="snowflakes-container"></div>
+
+<script>
+    // Snowflake script
+    const snowflakesContainer = document.getElementById('snowflakes-container');
+    const snowflakeCount = 50;
+
+    for (let i = 0; i < snowflakeCount; i++) {
+        const snowflake = document.createElement('div');
+        snowflake.className = 'snowflake';
+        snowflake.innerHTML = '❄';
+        snowflake.style.left = `${Math.random() * 100}vw`;
+        snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
+        snowflake.style.opacity = Math.random();
+        snowflake.style.fontSize = `${Math.random() * 10 + 10}px`;
+        snowflakesContainer.appendChild(snowflake);
+    }
+</script>
+</div>
+<button id="dark-mode-toggle">🌙</button>
+</body>
+</html>
